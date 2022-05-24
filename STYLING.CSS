@@ -12,10 +12,15 @@ h1{
     border: 2px solid white;
 }
 
-p{
+.para{
     font-size: 20px;
     font-family: Verdana;
     background-color: black;
     color: white;
+    text-transform: capitalize;
+}
+
+.ODERS img{
+    vertical-align: middle;
 }
 
