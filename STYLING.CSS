@@ -7,9 +7,10 @@ body{
 
 h1{
     text-align: center;
-    color: rgb(113, 29, 29);
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     border: 2px solid white;
+    text-shadow: 2px 2px 5px black, 0 0 25px rgb(10, 10, 177), 0 0 4px darkblue;
 }
 
 .para{
@@ -18,9 +19,19 @@ h1{
     background-color: black;
     color: white;
     text-transform: capitalize;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .ODERS img{
     vertical-align: middle;
+}
+
+.indenting{
+    color: white;
+    text-indent: 50px;
+    letter-spacing: 3px;
+    line-height: 2.5;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
