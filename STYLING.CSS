@@ -19,8 +19,7 @@ h1{
     background-color: black;
     color: white;
     text-transform: capitalize;
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 900;
 }
 
 .ODERS img{
@@ -33,5 +32,9 @@ h1{
     letter-spacing: 3px;
     line-height: 2.5;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+a #form:visited{
+    
 }
 
