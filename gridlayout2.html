@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+
+    <style>
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(2, 2fr 2fr);
+            grid-gap: 1em;
+            /* grid-auto-rows: 100px;  This wont make your height flexible*/
+
+
+            /* for flexibility of my height */
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .wrapper .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: 70px;
+        }
+
+        .wrapper .nested > div{
+            background-color: black;
+            padding: 10px;
+        }
+
+        .wrapper .nested > div:nth-child(even){
+            background-color: white;
+            color: black;
+        }
+        
+        .wrapper > div{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background-color: rgba(0, 0, 0, 0.575);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate illo, assumenda totam magnam repellat ad iusto vel debitis veniam nobis.</div>
+
+        <div>Lorem ipsum dolor sit.</div>
+
+        <div class="nested">
+            <div>lorem</div>
+            <div>lorem</div>
+            <div>lorem</div>
+
+            <div>lorem</div>
+            <div>lorem</div>
+            <div>lorem</div>
+        </div>
+
+        <div>Lorem ipsum dolor sit.</div>
+
+        <div>Lorem ipsum dolor sit.</div>
+
+        <div>Lorem ipsum dolor sit.</div>
+
+        <div>Lorem ipsum dolor sit.</div>
+
+        <div>Lorem ipsum dolor sit.</div>
+    </div>
+</body>
+</html>

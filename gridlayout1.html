@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            /* Or instead of the both above you can just write grid-gap: 20px 
+            it will automatically give the column and row equal gap.*/
+        }
+
+        .wrapper > div{
+            background-color: rgba(128, 128, 128, 0.288);
+            padding: 20px;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background-color: rgba(128, 128, 128, 0.438);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque illo iste impedit, 
+            dolorum optio, eos consectetur nihil voluptatum provident voluptates fuga amet error aut quae, 
+            veniam eligendi quia. Accusantium ab eveniet accusamus incidunt minima, quasi tempora vel corporis velit. 
+            At similique eos eum et qui porro vitae deserunt placeat laboriosam voluptatem rerum est fugit, sed explicabo 
+            illum corrupti ut quisquam? Pariatur amet exercitationem quas! Consequuntur, voluptatem vero illo autem quis 
+            officiis dolor quas fugit praesentium optio. Illum, tenetur officiis.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui libero enim molestias possimus omnis corrupti 
+            nihil aliquam dolorum soluta, magni perspiciatis deleniti quos ipsam? Voluptatum quas nam voluptatem perspiciatis.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque illo iste impedit, 
+            dolorum optio, eos consectetur nihil voluptatum provident voluptates fuga amet error aut quae, 
+            veniam eligendi quia. Accusantium ab eveniet accusamus incidunt minima, quasi tempora vel corporis velit. 
+            At similique eos eum et qui porro vitae deserunt placeat laboriosam voluptatem rerum est fugit, sed explicabo 
+            illum corrupti ut quisquam? Pariatur amet exercitationem quas! Consequuntur, voluptatem vero illo autem quis 
+            officiis dolor quas fugit praesentium optio. Illum, tenetur officiis.
+        </div>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus qui libero enim molestias possimus omnis corrupti 
+            nihil aliquam dolorum soluta, magni perspiciatis deleniti quos ipsam? Voluptatum quas nam voluptatem perspiciatis.
+        </div>
+
+    </div>
+</body>
+</html>
